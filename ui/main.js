@@ -9,8 +9,8 @@ element.innerHTML='Hi! I am Vignesh';
 var img=document.getElementById('madi');
 var marginLeft=0;
 function moveRight(){
-    marginleft = marginleft + 5;
-    img.style.marginleft=marginleft + 'px';
+    marginLeft = marginLeft + 5;
+    img.style.marginLeft=marginLeft + 'px';
 }
 img.onclick= function (){
     var interval =setInterval(moveRight, 50);
