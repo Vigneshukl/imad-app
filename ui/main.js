@@ -9,7 +9,7 @@ element.innerHTML='Hi! I am Vignesh';
 var element=document.getElementById('madi');
 var marginLeft=0;
 function moveRight(){
-    marginleft = marginleft + 10;
+    marginleft = marginleft + 5;
     img.style.marginleft=marginleft + 'px';
 }
 img.onclick= function (){
