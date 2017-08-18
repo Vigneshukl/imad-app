@@ -7,6 +7,6 @@ element.innerHTML='Hi! I am Vignesh';
 //Move the image
 
 var element=document.getElementById('madi');
-img.onclck= function (){
+img.onclick= function (){
     img.style.marginleft = '100px';
 };
