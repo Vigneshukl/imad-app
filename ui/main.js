@@ -17,6 +17,6 @@ button.onclick = function(){
    //Not done yet
   };
   // Make the Request
-  request.open('GET','http://vigneshkumar337884.imad.hasura-app.io', true);
+  request.open('GET','http:// vigneshkumar337884.imad.hasura-app.io/counter', true);
   request.send(null);
 };
