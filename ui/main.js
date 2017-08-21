@@ -1,17 +1,9 @@
-console.log('Loaded!');
-
-//change the value of main-text div
-var element=document.getElementById('main-text');
-element.innerHTML='Hi! I am Vignesh';
-
-//Move the image
-
-var img=document.getElementById('madi');
-var marginLeft=0;
-function moveRight(){
-    marginLeft = marginLeft + 5;
-    img.style.marginLeft=marginLeft + 'px';
+// Counter Code
+var button=document.getElementById('counter');
+var counter=0;
+button.onclick = function()
+{
+  counter= counter+1;
+  var span=document.getElementById('count');
+  span.innerHTML=counter.toString();
 }
-img.onclick= function (){
-    var interval =setInterval(moveRight, 50);
-};
