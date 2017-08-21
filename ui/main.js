@@ -1,9 +1,24 @@
 // Counter Code
 var button=document.getElementById('counter');
-var counter=0;
 button.onclick = function()
 {
-  counter= counter+1;
-  var span=document.getElementById('count');
-  span.innerHTML=counter.toString();
-}
+    // Create a request
+  var request= new XMLHttpRequest();
+   // Capture response
+  request.onreadystatechange= function()
+  {
+      if(request.readystate === XMLHttpRequest.DONE)
+      {
+      // Take Some action
+      if(request.status === 200){
+          var counter = request.responseText;
+          var span=document.getElementById('count');
+          span.innerHTML=counter.toString();
+      }
+  }  
+   //Not done yet
+  };
+  // Make the Request
+  request. open('GET', 'http://http://vigneshkumar337884.imad.hasura-app.io/counter', true);
+  request. send(null);
+};
